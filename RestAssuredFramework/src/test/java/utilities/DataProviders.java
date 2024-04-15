@@ -7,7 +7,7 @@ import java.io.IOException;
 public class DataProviders {
     @DataProvider(name = "Data")
     Object [] [] getAllData() throws IOException {
-        String path = "E:\\Testing\\New folder (2)\\RestAssuredFramework\\testData\\UsreData.xlsx";
+        String path = "E:\SDET\Rest Assured\RestAssuredFramework\testData\\UsreData.xlsx";
         XLUtility xlUtility = new XLUtility(path);
         int totalRow = xlUtility.getRowCount("Sheet1");
         int totalColumn = xlUtility.getCellCount("Sheet1", 1);
@@ -25,7 +25,7 @@ public class DataProviders {
 
     @DataProvider(name = "UserNames")
     public Object [] getUserNames() throws IOException {
-        String path = "E:\\Testing\\New folder (2)\\RestAssuredFramework\\testData\\UsreData.xlsx";
+        String path = "E:\SDET\Rest Assured\RestAssuredFramework\testData\\UsreData.xlsx";
         XLUtility xlUtility = new XLUtility(path);
         int totalRow = xlUtility.getRowCount("Sheet1");
         String apiData[] = new String[totalRow];
